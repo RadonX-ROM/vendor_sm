@@ -55,9 +55,6 @@ ifeq ($(strip $(TARGET_ARCH)),arm)
             LOCAL_CFLAGS := -marm
           endif
         endif
-        ifeq ($(strip $(LOCAL_CLANG)),true)
-            LOCAL_CLANG := false
-        endif
       else
 
         # Set the normal arm default back to thumb mode if LOCAL_ARM_MODE is not set.
